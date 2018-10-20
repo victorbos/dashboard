@@ -48,7 +48,7 @@ data class DarkSkyForecast(
     )
 
     data class Time(
-            private val time:Long
+            private val time: Long
     ) {
         init {
             val readableTime = LocalDateTime.ofInstant(Instant.ofEpochSecond(time), ZoneId.systemDefault())
